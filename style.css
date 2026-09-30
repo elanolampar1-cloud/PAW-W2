@@ -1,0 +1,141 @@
+/* 8. HTML Font */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #EDF1EE;
+  --card: #FFFFFF;
+  --ink: #1F2A24;
+  --muted: #5C6B62;
+  --accent: #3D6A52;
+  --accent-soft: #DCEAE1;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  font-family: 'Inter', Arial, sans-serif; /* HTML Font */
+  color: var(--ink);
+  padding: 40px 16px;
+}
+
+.card {
+  background: var(--card);
+  max-width: 480px;
+  width: 100%;
+  padding: 40px 32px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  text-align: center; /* 7. HTML Align */
+}
+
+.avatar {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.avatar img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--accent-soft);
+}
+
+h1 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 2rem;
+  margin: 0 0 4px;
+  color: var(--ink);
+}
+
+h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--muted); /* 6. HTML Background/Color Text */
+  margin: 0 0 20px;
+}
+
+h3, h4, h5 {
+  font-family: 'Inter', sans-serif;
+  text-align: left;
+  margin: 28px 0 10px;
+  color: var(--accent);
+}
+
+.info {
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* 10. HTML Table styling */
+table.data-diri {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.92rem;
+}
+
+table.data-diri th,
+table.data-diri td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #E4E9E6;
+}
+
+table.data-diri th {
+  background: var(--accent-soft); /* 6. HTML Background/Color Text */
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.social-row {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.social-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff; /* 6. HTML Background/Color Text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: transform 0.15s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+}
+
+.updated {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: left;
+}
+
+footer {
+  margin-top: 24px;
+  border-top: 1px solid #E4E9E6;
+  padding-top: 14px;
+}
+
+footer h6 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--muted);
+  margin: 0;
+}
